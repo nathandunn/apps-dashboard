@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Space Invaders",
+    "slug": "space-invaders",
+    "desc": "Classic arcade shooter built with TypeScript + Phaser.",
+    "url": "https://space-invaders.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/space-invaders",
+    "status": "live",
+    "tags": [
+      "game",
+      "typescript",
+      "phaser"
+    ]
+  },
+  {
+    "name": "Oregon Beach App",
+    "slug": "beach",
+    "desc": "Finds the best Oregon coast beach right now using NWS weather and driving distance.",
+    "url": "https://beach.apps.precogsoftwareservices.com",
+    "repo": null,
+    "status": "live",
+    "tags": [
+      "web",
+      "fastapi",
+      "react",
+      "postgres"
+    ]
+  },
+  {
+    "name": "Dino Poop",
+    "slug": "dino-poop",
+    "desc": "Coming soon.",
+    "url": null,
+    "repo": "https://github.com/nathandunn/dino-poop",
+    "status": "planned",
+    "tags": [
+      "game"
+    ]
+  },
+  {
+    "name": "Battle Bots",
+    "slug": "battle",
+    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "url": null,
+    "repo": null,
+    "status": "planned",
+    "tags": [
+      "simulation",
+      "ai"
+    ]
+  }
+]
