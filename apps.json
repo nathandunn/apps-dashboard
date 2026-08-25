@@ -29,10 +29,10 @@
   {
     "name": "Dino Poop",
     "slug": "dino-poop",
-    "desc": "Coming soon.",
-    "url": null,
+    "desc": "Arcade wind-drift bombing game - fly a pterodactyl, lead the target, let physics finish the job.",
+    "url": "https://dino.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/dino-poop",
-    "status": "planned",
+    "status": "live",
     "tags": [
       "game"
     ]
@@ -41,12 +41,37 @@
     "name": "Battle Bots",
     "slug": "battle",
     "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
-    "url": null,
-    "repo": null,
-    "status": "planned",
+    "url": "https://battle.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/battle-bots",
+    "status": "live",
     "tags": [
       "simulation",
       "ai"
+    ]
+  },
+  {
+    "name": "Pack Hunt",
+    "slug": "pack",
+    "desc": "Asymmetric predator/prey simulation - wolves hunt deer with different action sets and win conditions.",
+    "url": "https://pack.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/pack-hunt",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai"
+    ]
+  },
+  {
+    "name": "Card Table",
+    "slug": "cards",
+    "desc": "Six-seat card betting simulator - every player is a configurable AI personality, with per-seat stats.",
+    "url": "https://cards.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/card-table",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "cards"
     ]
   }
 ]
