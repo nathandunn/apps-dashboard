@@ -29,12 +29,13 @@
   {
     "name": "Dino Poop",
     "slug": "dino-poop",
-    "desc": "Arcade wind-drift bombing game - fly a pterodactyl, lead the target, let physics finish the job.",
+    "desc": "Territory-paint game - dinos leave solid trails that claim the board and block movement, including their own. AI dinos are personality-driven.",
     "url": "https://dino.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/dino-poop",
     "status": "live",
     "tags": [
-      "game"
+      "game",
+      "simulation"
     ]
   },
   {
