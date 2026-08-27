@@ -74,5 +74,17 @@
       "ai",
       "cards"
     ]
+  },
+  {
+    "name": "Beach Finder",
+    "slug": "beach-finder",
+    "desc": "Find the best beaches near you, anywhere - live weather, ranked 0-100. Global cousin of the Oregon Beach App.",
+    "url": "https://beaches.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/beach-finder",
+    "status": "live",
+    "tags": [
+      "weather",
+      "maps"
+    ]
   }
 ]
