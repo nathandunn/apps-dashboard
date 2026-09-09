@@ -19,6 +19,7 @@
   .name{font-size:17px;font-weight:600;margin:0}
   .badge{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid;white-space:nowrap}
   .live{color:var(--live);border-color:var(--live)}.planned{color:var(--plan);border-color:var(--plan)}
+  .building{color:var(--accent);border-color:var(--accent)}
   .desc{color:var(--mute);font-size:13px;line-height:1.5;margin:0;flex:1}
   .tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:11px;color:var(--mute);background:#1d2027;padding:2px 7px;border-radius:4px}
   .links{display:flex;gap:8px;margin-top:4px}
@@ -39,7 +40,7 @@
 (async()=>{
   const r=await fetch('./apps.json?'+Date.now());const apps=await r.json();
   const g=document.getElementById('grid');
-  const order={live:0,planned:1};
+  const order={live:0,building:1,planned:2};
   apps.sort((a,b)=>(order[a.status]??9)-(order[b.status]??9)||a.name.localeCompare(b.name));
   for(const a of apps){
     const el=document.createElement('article');el.className='card';
@@ -54,7 +55,8 @@
     g.appendChild(el);
   }
   const live=apps.filter(a=>a.status==='live').length;
-  document.getElementById('foot').textContent=`${live} live · ${apps.length-live} planned · updated ${new Date().toISOString().slice(0,10)}`;
+  const building=apps.filter(a=>a.status==='building').length;
+  document.getElementById('foot').textContent=`${live} live · ${building} building · ${apps.length-live-building} planned · updated ${new Date().toISOString().slice(0,10)}`;
 })();
 </script>
 </body>
