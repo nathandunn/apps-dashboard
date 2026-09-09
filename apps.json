@@ -93,7 +93,7 @@
     "desc": "Large-field battle simulator - 500 personality-driven actors, unit-level personalities, simulated ballistics, cover and melee. Same seed, same battle.",
     "url": "https://war.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/war-sim",
-    "status": "building",
+    "status": "live",
     "tags": [
       "simulation",
       "ai",
