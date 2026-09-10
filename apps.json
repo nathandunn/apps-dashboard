@@ -99,5 +99,47 @@
       "ai",
       "game"
     ]
+  },
+  {
+    "name": "Pack Hunt 3D",
+    "slug": "pack-hunt-3d",
+    "desc": "Pack Hunt in 3D - the same wolves and deer with an energy and gait model, on an orbitable field. A second, independent implementation in Godot 4 / GDScript, exported to WebAssembly.",
+    "url": "https://pack-hunt-3d.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/pack-hunt-3d",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot"
+    ]
+  },
+  {
+    "name": "Pack Hunt Brains",
+    "slug": "pack-hunt-brains",
+    "desc": "Tell the deer herd and the wolf pack what to do, in plain English. Claude compiles each side into a small behaviour language and the simulation runs them against each other - the language picks actions, the energy model decides what they cost.",
+    "url": "https://brains.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/pack-hunt-brains",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "claude",
+      "godot"
+    ]
+  },
+  {
+    "name": "War Sim (Godot)",
+    "slug": "war-sim-godot",
+    "desc": "War Sim in Godot 4 / GDScript, exported to WebAssembly - a second, independent implementation of the same 500-actor battle, deterministic by seed.",
+    "url": "https://war-godot.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/war-sim-godot",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "game",
+      "godot"
+    ]
   }
 ]
