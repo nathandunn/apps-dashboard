@@ -2,6 +2,7 @@
   {
     "name": "Space Invaders",
     "slug": "space-invaders",
+    "short": "Classic arcade shooter in TypeScript + Phaser.",
     "desc": "Classic arcade shooter built with TypeScript + Phaser.",
     "url": "https://space-invaders.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/space-invaders",
@@ -15,6 +16,7 @@
   {
     "name": "Oregon Beach App",
     "slug": "beach",
+    "short": "Picks the best Oregon coast beach right now from live NWS weather and drive time.",
     "desc": "Finds the best Oregon coast beach right now using NWS weather and driving distance.",
     "url": "https://beach.apps.precogsoftwareservices.com",
     "repo": null,
@@ -29,6 +31,7 @@
   {
     "name": "Dino Poop",
     "slug": "dino-poop",
+    "short": "Territory-paint game where personality-driven dinos claim the board with blocking trails.",
     "desc": "Territory-paint game - dinos leave solid trails that claim the board and block movement, including their own. AI dinos are personality-driven.",
     "url": "https://dino.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/dino-poop",
@@ -41,7 +44,8 @@
   {
     "name": "Battle Bots",
     "slug": "battle",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -53,6 +57,7 @@
   {
     "name": "Pack Hunt",
     "slug": "pack",
+    "short": "Asymmetric predator/prey simulation - a wolf pack hunts a deer across an open field.",
     "desc": "Asymmetric predator/prey simulation - wolves hunt deer with different action sets and win conditions.",
     "url": "https://pack.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/pack-hunt",
@@ -65,6 +70,7 @@
   {
     "name": "Card Table",
     "slug": "cards",
+    "short": "Six-seat Texas Hold'em simulator where every player is a configurable AI personality.",
     "desc": "Six-seat card betting simulator - every player is a configurable AI personality, with per-seat stats.",
     "url": "https://cards.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/card-table",
@@ -78,6 +84,7 @@
   {
     "name": "Beach Finder",
     "slug": "beach-finder",
+    "short": "Finds the best beaches near you anywhere, ranked 0-100 on live weather.",
     "desc": "Find the best beaches near you, anywhere - live weather, ranked 0-100. Global cousin of the Oregon Beach App.",
     "url": "https://beaches.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/beach-finder",
@@ -90,6 +97,7 @@
   {
     "name": "War Sim",
     "slug": "war-sim",
+    "short": "500-actor battle simulator with ballistics, cover and melee. Same seed, same battle.",
     "desc": "Large-field battle simulator - 500 personality-driven actors, unit-level personalities, simulated ballistics, cover and melee. Same seed, same battle.",
     "url": "https://war.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/war-sim",
@@ -103,6 +111,7 @@
   {
     "name": "Pack Hunt 3D",
     "slug": "pack-hunt-3d",
+    "short": "Pack Hunt in 3D - the same hunt with energy and gaits, in Godot 4 and WebAssembly.",
     "desc": "Pack Hunt in 3D - the same wolves and deer with an energy and gait model, on an orbitable field. A second, independent implementation in Godot 4 / GDScript, exported to WebAssembly.",
     "url": "https://pack-hunt-3d.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/pack-hunt-3d",
@@ -117,6 +126,7 @@
   {
     "name": "Pack Hunt Brains",
     "slug": "pack-hunt-brains",
+    "short": "Describe the herd and the pack in plain English; Claude compiles both and runs them.",
     "desc": "Tell the deer herd and the wolf pack what to do, in plain English. Claude compiles each side into a small behaviour language and the simulation runs them against each other - the language picks actions, the energy model decides what they cost.",
     "url": "https://brains.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/pack-hunt-brains",
@@ -131,6 +141,7 @@
   {
     "name": "War Sim (Godot)",
     "slug": "war-sim-godot",
+    "short": "War Sim rebuilt in Godot 4 and WebAssembly - the same battle, a second engine.",
     "desc": "War Sim in Godot 4 / GDScript, exported to WebAssembly - a second, independent implementation of the same 500-actor battle, deterministic by seed.",
     "url": "https://war-godot.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/war-sim-godot",
