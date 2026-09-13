@@ -32,6 +32,6 @@ while IFS=$'\t' read -r name url; do
 done < <(python3 -c 'import json;[print(a["name"]+"\t"+a["url"]) for a in json.load(open("apps.json"))]')
 
 echo "$n Open links checked"
-[ "$n" -eq 11 ] || { echo "  expected 11 links, found $n"; fail=1; }
+[ "$n" -eq 12 ] || { echo "  expected 12 links, found $n"; fail=1; }
 [ "$fail" -eq 0 ] && echo "ALL GREEN" || echo "FAILURES ABOVE"
 exit $fail
