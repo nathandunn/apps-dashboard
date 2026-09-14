@@ -19,8 +19,10 @@
   }
 
   function sortApps(apps) {
+    /* Newest first (entries flagged `new` in apps.json), then by status, then by name. */
     return apps.slice().sort(function (a, b) {
-      return (STATUS_ORDER[a.status] == null ? 9 : STATUS_ORDER[a.status]) -
+      return (b.new ? 1 : 0) - (a.new ? 1 : 0) ||
+             (STATUS_ORDER[a.status] == null ? 9 : STATUS_ORDER[a.status]) -
              (STATUS_ORDER[b.status] == null ? 9 : STATUS_ORDER[b.status]) ||
              a.name.localeCompare(b.name);
     });
@@ -71,7 +73,8 @@
           '<span class="chev" aria-hidden="true"></span>' +
           '<span class="text">' +
             '<span class="top"><span class="name">' + esc(a.name) + '</span>' +
-            '<span class="badge ' + esc(a.status) + '">' + esc(a.status) + '</span></span>' +
+            '<span class="badge ' + esc(a.status) + '">' + esc(a.status) + '</span>' +
+            (a.new ? '<span class="badge new">new</span>' : '') + '</span>' +
             '<span class="desc">' + esc(oneLine(a)) + '</span>' +
           '</span>' +
         '</button>' +

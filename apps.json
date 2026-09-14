@@ -167,6 +167,7 @@
       "godot",
       "ragdoll",
       "simulation"
-    ]
+    ],
+    "new": true
   }
 ]
