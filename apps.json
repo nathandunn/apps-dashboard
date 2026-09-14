@@ -156,7 +156,7 @@
   {
     "name": "Rock Bots",
     "slug": "rock-bots",
-    "short": "5v5 robots throwing rocks and punching - a personality-driven AI brawl in Godot 3D, with ragdolls and a victory celebration.",
+    "short": "5v5 robots throwing rocks and punching - a personality-driven ragdoll brawl in Godot 3D.",
     "desc": "Five-a-side robot brawl in Godot 4 / WebAssembly. Robots throw reusable rocks (three sizes; damage from the rock's mass and speed relative to the target, friendly fire on) and punch (wind-up, can miss, can be dodged); six hitboxes per robot, a hit does more the more of them it catches; every knockdown is a ragdoll. They only dodge and aim at what they can see, never throw through a mate, and guard their friends. Pure spectator AI sim: pick a preset (Brawler, Slinger, Coward, Tactician, Guardian, Balanced) or seven sliders per team (aggression, caution, rock love, teamwork, patience, survival, protect), watch at 1-8x with pause, or batch-run matches for stats. No clock - last team standing; the winners dance, then squat on and relieve themselves over the fallen before the results panel asks whether to go again.",
     "url": "https://rock-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/rock-bots",
