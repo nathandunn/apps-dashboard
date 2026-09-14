@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -172,7 +172,6 @@
   {
     "name": "Melee Bots",
     "slug": "melee-bots",
-    "new": true,
     "short": "5v5 robot brawl with rocks, bats, knives, swords and spears - get floored, drop your weapon.",
     "desc": "The armed cousin of Rock Bots (Godot 4 / WebAssembly). The arena is strewn with rocks (thrown, three sizes), bats, knives, swords and spears (knives and spears can be thrown too), one thing per robot and editable in setup. Every knockdown makes you drop what you hold, a landed weapon blow always floors its target, and being hit cancels the swing you were winding up - so between two robots swinging at each other, he who connects first keeps his weapon. Fists, feet and stomps as in Rock Bots; robots see only what is in front of them, never throw through a mate, and guard their friends. Presets or seven sliders per team, pause, 1-8x, batch stats; the winners dance, squat on and relieve themselves over the fallen.",
     "url": "https://melee-bots.apps.precogsoftwareservices.com",
@@ -184,6 +183,23 @@
       "3d",
       "godot",
       "ragdoll"
+    ]
+  },
+  {
+    "name": "Dodgeball Bots",
+    "slug": "dodgeball-bots",
+    "new": true,
+    "short": "6v6 dodgeball where each player's five build properties add up to 1 - spend them well.",
+    "desc": "Six-a-side elimination dodgeball as a spectator AI sim (Godot 4 / WebAssembly), on NDL / USA Dodgeball rules: the opening rush for six balls on the centre line, live balls, catches that put the thrower out and bring a teammate back, blocking with a ball in hand, the ten-second throw clock and the possession rule. Each player has a personality (six sliders: aggression, caution, catching, teamwork, patience, bully) and a build of five properties - speed, arm, aim, hands, dodge - that always add up to 1; push one up and the rest give way. The exchange rate between properties was set by simulation: a team of specialists in any one property beats an even team about half the time (tools/calibration_report.md in the repo). Presets or sliders per team, pause, 1-8x, batch stats, and a headless sim with an aim-test harness.",
+    "url": "https://dodgeball-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/dodgeball-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "sport"
     ]
   }
 ]
