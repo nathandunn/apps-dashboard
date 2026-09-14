@@ -167,7 +167,23 @@
       "godot",
       "ragdoll",
       "simulation"
-    ],
-    "new": true
+    ]
+  },
+  {
+    "name": "Melee Bots",
+    "slug": "melee-bots",
+    "new": true,
+    "short": "5v5 robot brawl with rocks, bats, knives, swords and spears - get floored and you drop your weapon.",
+    "desc": "The armed cousin of Rock Bots (Godot 4 / WebAssembly). The arena is strewn with rocks (thrown, three sizes), bats, knives, swords and spears (knives and spears can be thrown too), one thing per robot and editable in setup. Every knockdown makes you drop what you hold, a landed weapon blow always floors its target, and being hit cancels the swing you were winding up - so between two robots swinging at each other, he who connects first keeps his weapon. Fists, feet and stomps as in Rock Bots; robots see only what is in front of them, never throw through a mate, and guard their friends. Presets or seven sliders per team, pause, 1-8x, batch stats; the winners dance, squat on and relieve themselves over the fallen.",
+    "url": "https://melee-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/melee-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "ragdoll"
+    ]
   }
 ]
