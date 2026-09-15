@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -200,6 +200,23 @@
       "3d",
       "godot",
       "sport"
+    ]
+  },
+  {
+    "name": "Flipbook Field",
+    "slug": "flipbook-field",
+    "new": true,
+    "short": "A graphic-novel blockout: walk up to a group under a tree and talk to them.",
+    "desc": "A Godot 4 blockout for a hand-drawn-looking 3D game. A block character walks up to a group of block characters standing in a field under a tree and talks to them in comic speech balloons anchored to whoever has the floor. The whole scene is generated from a seed - the field, the tree, the group, the names and the conversation all reshuffle - so what is being tested is the composition rules rather than one arrangement: the group stands in a horseshoe whose opening faces the way you walk in, and the tree lands on the far side so it frames them. The look is three layers: a banded toon shader with a cool purple shadow tint instead of a darker one, inverted-hull ink outlines expanded radially so box corners stay watertight, and a Forward+ depth/normal edge pass for interior creases. Animation is quantised to 12 fps, which is most of what makes the figures read as drawn rather than simulated. Keyboard and mouse on desktop, thumbstick and a TALK button on a phone.",
+    "url": "https://flipbook-field.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/flipbook-field",
+    "status": "live",
+    "tags": [
+      "game",
+      "3d",
+      "godot",
+      "wasm",
+      "shaders"
     ]
   }
 ]
