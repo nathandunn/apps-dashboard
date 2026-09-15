@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -188,7 +188,6 @@
   {
     "name": "Dodgeball Bots",
     "slug": "dodgeball-bots",
-    "new": true,
     "short": "6v6 dodgeball where each player's five build properties add up to 1 - spend them well.",
     "desc": "Six-a-side elimination dodgeball as a spectator AI sim (Godot 4 / WebAssembly), on NDL / USA Dodgeball rules: the opening rush for six balls on the centre line, live balls, catches that put the thrower out and bring a teammate back, blocking with a ball in hand, the ten-second throw clock and the possession rule. Each player has a personality (six sliders: aggression, caution, catching, teamwork, patience, bully) and a build of five properties - speed, arm, aim, hands, dodge - that always add up to 1; push one up and the rest give way. The exchange rate between properties was set by simulation: a team of specialists in any one property beats an even team about half the time (tools/calibration_report.md in the repo). Presets or sliders per team, pause, 1-8x, batch stats, and a headless sim with an aim-test harness.",
     "url": "https://dodgeball-bots.apps.precogsoftwareservices.com",
@@ -217,6 +216,23 @@
       "godot",
       "wasm",
       "shaders"
+    ]
+  },
+  {
+    "name": "Dance-Off Bots",
+    "slug": "danceoff-bots",
+    "new": true,
+    "short": "5v5 street dance-off: dance in step to score, or break off and floor the other crew.",
+    "desc": "A five-a-side street dance-off as a spectator AI sim (Godot 4 / WebAssembly) to a generated 120 BPM beat. Every two bars the showiest dancer still standing calls the next move from eleven in three tiers; the crew scores sync for dancing it together on the beat and flair for how well and how boldly they dance it, with hats and canes adding polish. Anyone who stops to punch, barge, fetch a prop or fling a bin lid scores nothing until the next phrase - except a dance-strike, a kick or swing that lands on the beat of a real move, which scores and floors a rival. Three judges weigh sync and flair differently and hold up their cards; the winners cheer and the losers sit down and cry. Each crew has a personality (aggression, showmanship, discipline, grudge, caution, teamwork) and a build of five properties - rhythm, flair, balance, strength, arm - that always add up to 1. Presets or sliders per crew, pause, 1-8x, sound toggle, batch stats and a headless sim with a calibration tool.",
+    "url": "https://danceoff-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/danceoff-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "dance"
     ]
   }
 ]
