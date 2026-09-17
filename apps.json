@@ -202,11 +202,11 @@
     ]
   },
   {
-    "name": "Flipbook Field",
+    "name": "The Outdoor Office",
     "slug": "flipbook-field",
     "new": true,
-    "short": "A graphic-novel blockout: walk up to a group under a tree and talk to them.",
-    "desc": "A Godot 4 blockout for a hand-drawn-looking 3D game. A block character walks up to a group of block characters standing in a field under a tree and talks to them in comic speech balloons anchored to whoever has the floor. The whole scene is generated from a seed - the field, the tree, the group, the names and the conversation all reshuffle - so what is being tested is the composition rules rather than one arrangement: the group stands in a horseshoe whose opening faces the way you walk in, and the tree lands on the far side so it frames them. The look is three layers: a banded toon shader with a cool purple shadow tint instead of a darker one, inverted-hull ink outlines expanded radially so box corners stay watertight, and a Forward+ depth/normal edge pass for interior creases. Animation is quantised to 12 fps, which is most of what makes the figures read as drawn rather than simulated. Keyboard and mouse on desktop, thumbstick and a TALK button on a phone.",
+    "short": "An office made of rocks and logs. Present from a boulder, out-influence your nemesis.",
+    "desc": "A turn-based influence game in a Godot 4 world drawn to look like a graphic novel. The office is made of natural elements: slab-stone desks on stump legs, slate monitors, a felled-log break room, a stream instead of a water cooler, and a flat-topped boulder you present from. You and a work nemesis alternate turns. Four actions each: take a prop from a desk, which also makes the nearest neutrals curious; work the stream, which converts curious neutrals into followers but does nothing for cold ones; or rally in the break room. Then walk to the rock and give a three-slide talk to whoever turns up. Everyone in the crowd wants one of data, story, gadget or snacks, and a slide lands in proportion to how much of the room was hoping for that. Between slides a heckler interrupts and you either eat a small boo or clap back. Boo pressure net of applause peels followers off you and turns them into haters, so a talk can lose you the round even when it is loud. Seven archetypes - neutral, follower, wage slave, influencer, lover, hater, bully - each a pump or a drain on the shared pool of neutrals, which is what the two of you are actually fighting over. The nemesis turn plays out in the world at 3x so you can watch it happen. Three rounds, then a head-to-head card of claps, boos and people gained. The look is three layers: a banded toon shader with a cool purple shadow tint instead of a darker one, inverted-hull ink outlines expanded radially so box corners stay watertight, and a Forward+ depth and normal edge pass for interior creases. Animation is quantised to 12 fps, which is most of what makes the figures read as drawn rather than simulated. Keyboard and mouse on desktop, thumbstick and a TALK button on a phone.",
     "url": "https://flipbook-field.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/flipbook-field",
     "status": "live",
@@ -215,7 +215,9 @@
       "3d",
       "godot",
       "wasm",
-      "shaders"
+      "shaders",
+      "turn-based",
+      "strategy"
     ]
   },
   {
