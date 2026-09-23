@@ -221,6 +221,23 @@
     ]
   },
   {
+    "name": "The Outdoor Office: Board Game",
+    "slug": "outdoor-office",
+    "new": true,
+    "short": "The Outdoor Office as a board game. Walk the corridors, play a card, out-present your nemesis.",
+    "desc": "The Outdoor Office with the 3D taken out and the rules left in. The office is a Clue board drawn on a legal pad: four typed desks, a stream, a break room, a lobby and the rock you present from, joined by corridors that cost steps. Pick a job, spend four points on Charm, Guile, Hustle and Grit, and bring up to four colleagues; each job's rule is live while one of them claps for you. You and your nemesis alternate four moves a round, each move a card that says exactly what it will do: take a card at a desk and make nearby people curious, close the curious at the stream, rally in the break room, buy one of theirs with a card they want, turn a follower into a heckler, or sabotage - pinch a card, spread a rumour, rig the projector. The room the other side stands in cannot be entered or walked through. Then both of you give a three-slide talk, answering hecklers as they come. Three rounds; the side that is behind moves second and gets the last word. The rules engine is plain JavaScript with no DOM, and a headless harness plays it: greedy play is level with the nemesis, random play loses.",
+    "url": "https://outdoor-office.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/outdoor-office",
+    "status": "live",
+    "tags": [
+      "game",
+      "board-game",
+      "turn-based",
+      "strategy",
+      "static"
+    ]
+  },
+  {
     "name": "Dance-Off Bots",
     "slug": "danceoff-bots",
     "new": true,
