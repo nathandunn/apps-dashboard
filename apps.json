@@ -224,7 +224,7 @@
     "name": "The Outdoor Office: Party Battle",
     "slug": "outdoor-office",
     "new": true,
-    "short": "Lead a party through the office: argue their people down, loot the desks, then give the final talk.",
+    "short": "Lead a party through the office, loot the desks, then give the final talk.",
     "desc": "A tactics battle on a 31 by 19 office floor, drawn on a legal pad. You pick a job, spend four points on Charm, Guile, Hustle and Grit, and bring up to four colleagues; your nemesis brings as many. Every colleague is a unit with morale and a job ability on a cooldown: Rally, Prototype, Jam, Counsel, Rumour, Pitch, Injunction, Fetch. For twelve turns each unit moves and does one thing - argues with an adjacent enemy, pickpockets a card, takes a card from a desk, raids a supply closet, pitches a neutral into your crowd, hires a contractor or retains a consultant in the Lobby, or rigs the projector at the Rock. A unit at zero morale drops its cards as loot and sulks in the car park; put the whole enemy party there at once and the match is yours. Otherwise both leaders give a final talk with every card their party still holds, scored by quality and by how many in the room want each taste. The rules engine and its planner are plain JavaScript with no DOM; a headless harness plays the planner against itself (level over 100 matches) and against random play (never wins). The earlier board-game version is still at /board.html.",
     "url": "https://outdoor-office.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/outdoor-office",
