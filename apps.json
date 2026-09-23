@@ -221,17 +221,18 @@
     ]
   },
   {
-    "name": "The Outdoor Office: Board Game",
+    "name": "The Outdoor Office: Party Battle",
     "slug": "outdoor-office",
     "new": true,
-    "short": "The Outdoor Office as a board game. Walk the corridors, play a card, out-present your nemesis.",
-    "desc": "The Outdoor Office with the 3D taken out and the rules left in. The office is a Clue board drawn on a legal pad: four typed desks, a stream, a break room, a lobby and the rock you present from, joined by corridors that cost steps. Pick a job, spend four points on Charm, Guile, Hustle and Grit, and bring up to four colleagues; each job's rule is live while one of them claps for you. You and your nemesis alternate four moves a round, each move a card that says exactly what it will do: take a card at a desk and make nearby people curious, close the curious at the stream, rally in the break room, buy one of theirs with a card they want, turn a follower into a heckler, or sabotage - pinch a card, spread a rumour, rig the projector. The room the other side stands in cannot be entered or walked through. Then both of you give a three-slide talk, answering hecklers as they come. Three rounds; the side that is behind moves second and gets the last word. The rules engine is plain JavaScript with no DOM, and a headless harness plays it: greedy play is level with the nemesis, random play loses.",
+    "short": "Lead a party through the office: argue their people down, loot the desks, then give the final talk.",
+    "desc": "A tactics battle on a 31 by 19 office floor, drawn on a legal pad. You pick a job, spend four points on Charm, Guile, Hustle and Grit, and bring up to four colleagues; your nemesis brings as many. Every colleague is a unit with morale and a job ability on a cooldown: Rally, Prototype, Jam, Counsel, Rumour, Pitch, Injunction, Fetch. For twelve turns each unit moves and does one thing - argues with an adjacent enemy, pickpockets a card, takes a card from a desk, raids a supply closet, pitches a neutral into your crowd, hires a contractor or retains a consultant in the Lobby, or rigs the projector at the Rock. A unit at zero morale drops its cards as loot and sulks in the car park; put the whole enemy party there at once and the match is yours. Otherwise both leaders give a final talk with every card their party still holds, scored by quality and by how many in the room want each taste. The rules engine and its planner are plain JavaScript with no DOM; a headless harness plays the planner against itself (level over 100 matches) and against random play (never wins). The earlier board-game version is still at /board.html.",
     "url": "https://outdoor-office.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/outdoor-office",
     "status": "live",
     "tags": [
       "game",
-      "board-game",
+      "tactics",
+      "rpg",
       "turn-based",
       "strategy",
       "static"
