@@ -255,8 +255,8 @@
   {
     "name": "Legion Bots",
     "slug": "legion-bots",
-    "short": "TABS-style ragdoll armies of up to 50 a side, each robot with its own personality and type.",
-    "desc": "Armies of rock-throwing, punching robots on the Rock Bots model, scaled from 5 a side to 50 (Godot 4 / WebAssembly). Every robot has a personality (seven traits) and a type (brawn, speed, grit, reflex, aim - always adding to 1), set for the whole team or robot by robot, plus five custom slots of each kept in the browser. v0 is the Rock Bots brawl at army scale; the TABS-style budget, placement and unit classes are next. Pick the army size in the button row.",
+    "short": "TABS-style ragdoll battles: spend 500 gold on Brawlers, Slingers and Shields, place them, and watch them fight.",
+    "desc": "A TABS-style army battle on the Rock Bots model (Godot 4 / WebAssembly). Spend 500 gold a side on three unit classes - Brawler, Slinger and Shield - tap or drag to place them on your half, give each squad a type (brawn, speed, grit, reflex, aim, always adding to 1) and a personality, and press Fight. There are no orders: how a squad holds, charges or hangs back comes from its personality. Up to 20 a side, three preset armies, five saved-army slots in the browser, and a results panel with gold spent and gold left standing. Unit costs are placeholders until they are calibrated by simulation.",
     "url": "https://legion-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/legion-bots",
     "status": "live",
