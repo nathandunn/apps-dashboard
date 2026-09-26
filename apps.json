@@ -255,8 +255,8 @@
   {
     "name": "Legion Bots",
     "slug": "legion-bots",
-    "short": "TABS-style battles: spend 500 gold on Brawlers, Slingers and Shields, place them, watch.",
-    "desc": "A TABS-style army battle on the Rock Bots model (Godot 4 / WebAssembly). Spend 500 gold a side on three unit classes - Brawler, Slinger and Shield - tap or drag to place them on your half, give each squad a type (brawn, speed, grit, reflex, aim, always adding to 1) and a personality, and press Fight. There are no orders: how a squad holds, charges or hangs back comes from its personality. Up to 20 a side, three preset armies, five saved-army slots in the browser, and a results panel with gold spent and gold left standing. Unit costs are placeholders until they are calibrated by simulation.",
+    "short": "TABS-style battles: 500 gold on Brawlers, Slingers and Shields - costs fitted by simulation.",
+    "desc": "A TABS-style army battle on the Rock Bots model (Godot 4 / WebAssembly). Spend 500 gold a side on three unit classes - Brawler, Slinger and Shield, in a rock-paper-scissors cycle - tap or drag to place them on your half, give each squad a type (brawn, speed, grit, reflex, aim, always adding to 1) and a personality, and press Fight. There are no orders: how a squad holds, charges or hangs back comes from its personality. Unit costs and type spans were fitted by simulation (M3): each class wins about half its battles against the field at equal gold (tools/calibration_report.md in the repo). Up to 20 a side, three preset armies, five saved-army slots in the browser, and a results panel with gold spent and gold left standing.",
     "url": "https://legion-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/legion-bots",
     "status": "live",
