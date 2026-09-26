@@ -260,13 +260,28 @@
     "url": "https://legion-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/legion-bots",
     "status": "live",
-    "new": true,
     "tags": [
       "simulation",
       "ai",
       "3d",
       "godot",
       "battle"
+    ]
+  },
+  {
+    "name": "Bludleigh",
+    "slug": "hunting-lodge",
+    "short": "Wodehouse as a 3D graphic novel: two gentle poets, one bloodthirsty house.",
+    "desc": "A 28-page graphic novel in Godot 4 / WebAssembly, after P. G. Wodehouse's 'Unpleasantness at Bludleigh Court'. Mr Mulliner, in the bar-parlour of the Angler's Rest, tells how his niece Charlotte and her fiance Aubrey Bassinger - both writers of the gentlest vers libre - visited Aubrey's family seat, where the heads on the walls outnumber the guests, and came home three days later shooting clouds. Every page is a live 3D panel: six sets built from primitives (the Angler's Rest, the Court from the drive, a great hall of stags and one bear, the dining room, the gun-room, the moor), a camera that creeps toward its subject while you read, and lettering drawn on top - caption boxes, speech balloons whose tails find the speaker's head, jagged ones for shouting, sound effects. The faces are Nathan's pen drawings and the figures are the paper dolls from The Outdoor Office. Nothing about the lovers' faces changes; the transformation is told in the shadows, which run from printer's purple to oxblood and back, in their clothes, and in their hands. Click, tap or Space to turn the page.",
+    "url": "https://hunting-lodge.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/hunting-lodge",
+    "status": "live",
+    "new": true,
+    "tags": [
+      "story",
+      "3d",
+      "godot",
+      "graphic novel"
     ]
   }
 ]
