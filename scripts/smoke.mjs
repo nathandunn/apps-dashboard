@@ -74,7 +74,7 @@ ok(!/<button[^>]*>(?:(?!<\/button>)[\s\S])*<a /.test(list), 'no anchor nested in
 const sorted = D.sortApps(apps);
 eq(sorted[0].slug, 'bludleigh-film', 'the entry flagged new sorts first');
 eq(sorted[1].status, 'live', 'live entries sort next');
-eq(D.footText(apps, '2026-09-11'), '19 live · 1 building · 0 planned · updated 2026-09-11', 'footer counts');
+eq(D.footText(apps, '2026-09-11'), '20 live · 0 building · 0 planned · updated 2026-09-11', 'footer counts');
 
 /* --- click classification ------------------------------------------------ */
 const node = (tag, cls, parent) => ({
