@@ -29,8 +29,8 @@ const D = sandbox.Dashboard;
 ok(D, 'app.js defines window.Dashboard');
 
 /* --- data ---------------------------------------------------------------- */
-eq(apps.length, 19, 'all 19 entries preserved');
-eq(new Set(apps.map(a => a.slug)).size, 19, 'slugs are unique');
+eq(apps.length, 20, 'all 20 entries preserved');
+eq(new Set(apps.map(a => a.slug)).size, 20, 'slugs are unique');
 for (const a of apps) {
   ok(a.name && a.slug && a.status, `${a.slug}: name/slug/status present`);
   ok(typeof a.short === 'string' && a.short.length > 0, `${a.slug}: has a one-line blurb`);
@@ -42,8 +42,8 @@ for (const a of apps) {
 
 /* --- list markup --------------------------------------------------------- */
 const list = D.listHTML(apps);
-eq((list.match(/<article class="row"/g) || []).length, 19, 'one row per app');
-eq((list.match(/class="open"/g) || []).length, 19, 'one Open control per row');
+eq((list.match(/<article class="row"/g) || []).length, 20, 'one row per app');
+eq((list.match(/class="open"/g) || []).length, 20, 'one Open control per row');
 ok(!/class="card"/.test(list), 'no cards left in the rendered markup');
 const css = html.slice(html.indexOf('<style>'), html.indexOf('</style>'));
 ok(!/repeat\(auto-fill/.test(css), 'the auto-fill card grid rule is gone from the stylesheet');
@@ -72,8 +72,9 @@ ok(!/<button[^>]*>(?:(?!<\/button>)[\s\S])*<a /.test(list), 'no anchor nested in
 
 /* --- ordering and footer ------------------------------------------------- */
 const sorted = D.sortApps(apps);
-eq(sorted[0].status, 'live', 'live entries sort first');
-eq(D.footText(apps, '2026-09-11'), '19 live · 0 building · 0 planned · updated 2026-09-11', 'footer counts');
+eq(sorted[0].slug, 'bludleigh-film', 'the entry flagged new sorts first');
+eq(sorted[1].status, 'live', 'live entries sort next');
+eq(D.footText(apps, '2026-09-11'), '19 live · 1 building · 0 planned · updated 2026-09-11', 'footer counts');
 
 /* --- click classification ------------------------------------------------ */
 const node = (tag, cls, parent) => ({

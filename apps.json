@@ -276,12 +276,27 @@
     "url": "https://hunting-lodge.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/hunting-lodge",
     "status": "live",
-    "new": true,
     "tags": [
       "story",
       "3d",
       "godot",
       "graphic novel"
+    ]
+  },
+  {
+    "name": "Bludleigh, the film",
+    "slug": "bludleigh-film",
+    "short": "The Wodehouse graphic novel as a six-minute animated short: the poets walk, the house wins.",
+    "desc": "The 28-page Godot graphic novel 'Bludleigh' re-cut as a six-minute animated film: the same six sets, paper-doll figures and pen-drawn faces, rendered from Godot to an MP4 and served with a plain player page. Mr Mulliner tells how Charlotte and Aubrey, two writers of the gentlest vers libre, visited Bludleigh Court and came home shooting clouds. Press play.",
+    "url": "https://bludleigh-film.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/bludleigh-film",
+    "status": "building",
+    "new": true,
+    "tags": [
+      "story",
+      "film",
+      "3d",
+      "godot"
     ]
   }
 ]
