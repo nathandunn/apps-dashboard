@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -297,6 +297,22 @@
       "film",
       "3d",
       "godot"
+    ]
+  },
+  {
+    "name": "Volley Bots",
+    "slug": "volley-bots",
+    "short": "A line of twenty with single-shot rifles and bayonets - formation, cover, volleys and charges all from personality.",
+    "desc": "Mid-19th-century line infantry in Godot 4 / WebAssembly: two companies of up to 20 men meet on a farm field with walls, fences, a ruined cottage and trees. Each man has a muzzle-loading rifle (one shot, ~9 s to reload, poor at range), a bayonet, and four properties on one budget - run, melee, accuracy, stamina - plus six traits: aggression, discipline, cohesion, cover, patience, nerve. Nobody takes orders. The sergeant is just the steadiest man alive; he publishes where the line stands, how tight, and whether he has called the volley or the charge, and every man decides through his own traits how much of that to follow - so formation, spacing, cover, fire-at-will vs volleys, fire-and-fall-back, the bayonet charge and the rout all emerge. A volley frightens the men around the mark far more than the same balls one at a time. The camera keeps the whole field in frame at whatever angle you choose until you zoom. Batch mode and a headless CLI sim for calibration.",
+    "url": "https://volley-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/volley-bots",
+    "status": "new",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle"
     ]
   }
 ]
