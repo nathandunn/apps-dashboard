@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -302,17 +302,53 @@
   {
     "name": "Volley Bots",
     "slug": "volley-bots",
-    "short": "A line of twenty with single-shot rifles and bayonets - formation, cover, volleys and charges all from personality.",
+    "short": "A line of twenty with single-shot rifles and bayonets; every tactic from personality.",
     "desc": "Mid-19th-century line infantry in Godot 4 / WebAssembly: two companies of up to 20 men meet on a farm field with walls, fences, a ruined cottage and trees. Each man has a muzzle-loading rifle (one shot, ~9 s to reload, poor at range), a bayonet, and four properties on one budget - run, melee, accuracy, stamina - plus six traits: aggression, discipline, cohesion, cover, patience, nerve. Nobody takes orders. The sergeant is just the steadiest man alive; he publishes where the line stands, how tight, and whether he has called the volley or the charge, and every man decides through his own traits how much of that to follow - so formation, spacing, cover, fire-at-will vs volleys, fire-and-fall-back, the bayonet charge and the rout all emerge. A volley frightens the men around the mark far more than the same balls one at a time. The camera keeps the whole field in frame at whatever angle you choose until you zoom. Batch mode and a headless CLI sim for calibration.",
     "url": "https://volley-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/volley-bots",
-    "status": "new",
+    "status": "live",
     "tags": [
       "simulation",
       "ai",
       "3d",
       "godot",
       "battle"
-    ]
+    ],
+    "new": true
+  },
+  {
+    "name": "Battalion Bots",
+    "slug": "battalion-bots",
+    "short": "Volley Bots at battalion scale: four companies a side, each its own type and temper.",
+    "desc": "A fork of Volley Bots (Godot 4 / WebAssembly): a side is a battalion of up to six companies (default four of ten), each with its own men, type (run, melee, accuracy, stamina on one budget), personality and place in the line - left, centre-left, centre-right, right or reserve - on a field twice the size each way, with hills, stone walls, roofless ruins, rocks and woods. Every company has its own sergeant on its own stretch of the front; a captain per side sends in the reserve where the line is doing worst, and a rout is felt by the next company along. Rifles fly real Minie balls, bayonets decide the rest. Battalion presets, per-company editing, results and Sim x10 by company, and a five-round campaign along a front of ten fields with the computer choosing a different doctrine for each company.",
+    "url": "https://battalion-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/battalion-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle"
+    ],
+    "new": true
+  },
+  {
+    "name": "Drillbook Bots",
+    "slug": "drillbook-bots",
+    "short": "Volley Bots where each company fights by a written drill - rules you can read.",
+    "desc": "A fork of Volley Bots (Godot 4 / WebAssembly): one company of up to 20 a side, the same types, rifle, ground and campaign - but the personality sliders are replaced by drills: short readable rule files ('when enemy charging and enemy within 40 -> hold; form tight; stand fast; volley at 30') for the sergeant and for each man. The first rule that holds and can be done decides; anything else falls to the engine on the drill's dials. A fixed vocabulary, no eval, errors with line numbers and a linter. Read any drill in the app; Sim x10 counts which rules decided. Seed drills match the Volley Bots presets; more are written with the owner, one behaviour at a time.",
+    "url": "https://drillbook-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/drillbook-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle",
+      "dsl"
+    ],
+    "new": true
   }
 ]
