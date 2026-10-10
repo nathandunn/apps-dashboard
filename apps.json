@@ -350,5 +350,22 @@
       "dsl"
     ],
     "new": true
+  },
+  {
+    "name": "Saloon Bots",
+    "slug": "saloon-bots",
+    "short": "Five a side, six-shooters and fists in a two-storey saloon; the team's doctrine decides it.",
+    "desc": "A 5-v-5 gunfight in Godot 4 / WebAssembly, played entirely by AI: a saloon with a balcony, two stairs, a bar of breakable bottles, a piano, barrels, crates and tables you can kick over into cover. Every man has the same Colt and the same fists - what differs is strategy. Each side runs a doctrine (Adaptive commander, Dig In, Rush, Pincer, High Ground, Leapfrog, Bait) as a phase machine handing out orders, over a team blackboard that counts every enemy shot so it can rush a man it knows is empty, and a tactical map that scores every spot for cover, sight lines and the angles that beat an enemy's cover. Each man blends his orders with ten personality traits (aggression, caution, patience, discipline, cunning, nerve, teamwork, height, brawl, trigger). Three-second standoff, 2:00 decision, sudden death. Show intents, per-man personalities, batch x10/x50 stats and a headless doctrine league.",
+    "url": "https://saloon-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/saloon-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle"
+    ],
+    "new": true
   }
 ]
