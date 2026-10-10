@@ -384,5 +384,21 @@
       "battle"
     ],
     "new": true
+  },
+  {
+    "name": "Mammoth Hunt",
+    "slug": "mammoth-hunt",
+    "short": "A band of Ice Age hunters against one mammoth: darts, thrusting spears, firebrands and a bog.",
+    "desc": "A canvas sim of a Paleolithic mammoth hunt, played entirely by AI. Up to 12 hunters of six types (Spearman, Atlatlist, Driver, Flanker, Hothead, Coward), each with courage, aggression, patience, teamwork and herding traits and editable kit, against a cow, young bull or old bull. Roughly real physics: ~47 J atlatl darts with the same aim for everyone, thrusting spears at arm's reach, hide/scapula/rib penetration, lung and heart wounds that don't clot, faster bleeding on the run, slow turning at speed, bluff charges, goring and trampling. Drivers with firebrands push the beast into a bog where it mires; boulders stop a charge; crossing the edge means it escaped. Live view plus batch simulation comparing a band of each type against your mix.",
+    "url": "https://mammoth-hunt.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/mammoth-hunt",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "canvas",
+      "hunt"
+    ],
+    "new": true
   }
 ]
