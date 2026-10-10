@@ -367,5 +367,22 @@
       "battle"
     ],
     "new": true
+  },
+  {
+    "name": "Dino Duel",
+    "slug": "dino-duel",
+    "short": "Six real dinosaurs one on one: jaws, horns, clubs and spikes against bone, armour and blood.",
+    "desc": "A 1v1 dinosaur fight in Godot 4 / WebAssembly, played by AI: T. rex, Triceratops, Ankylosaurus, Stegosaurus, Allosaurus and Utahraptor with literature-based mass, speed, turning, stamina and armour. Anatomical hitboxes (head, neck, chest, flank, belly, hips, tail, each leg) built from the same body plan as the 3D models; per-zone armour by crush/pierce/slash (the Triceratops frill only guards from the front); fractures, bleeding that scales with size, shock, stamina and fear. Each weapon behaves differently - a holding, shaking Rex bite, a charging gore, a leg-breaking tail club, an unaimed thagomizer, a slashing hatchet bite, a Utahraptor that leaps on and clings. Pick an animal and a personality for each side (eight presets, Random or Custom sliders over aggression, caution, cunning, persistence, nerve, pacing, display and opportunism). Full results breakdown, instant Sim x20/x100 statistics and a personality league.",
+    "url": "https://dino-duel.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/dino-duel",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle"
+    ],
+    "new": true
   }
 ]
