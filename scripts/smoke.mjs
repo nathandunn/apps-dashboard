@@ -30,7 +30,7 @@ ok(D, 'app.js defines window.Dashboard');
 
 /* --- data ---------------------------------------------------------------- */
 eq(apps.length, 26, 'all 26 entries preserved');
-eq(new Set(apps.map(a => a.slug)).size, 25, 'slugs are unique');
+eq(new Set(apps.map(a => a.slug)).size, 26, 'slugs are unique');
 for (const a of apps) {
   ok(a.name && a.slug && a.status, `${a.slug}: name/slug/status present`);
   ok(typeof a.short === 'string' && a.short.length > 0, `${a.slug}: has a one-line blurb`);
