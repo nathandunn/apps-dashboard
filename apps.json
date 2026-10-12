@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -398,6 +398,24 @@
       "ai",
       "canvas",
       "hunt"
+    ],
+    "new": true
+  },
+  {
+    "name": "Gridiron Bots",
+    "slug": "gridiron-bots",
+    "short": "Football where you write the AI: coaches, plays and position brains as rules.",
+    "desc": "Eleven a side, four quarters, downs and distance (Godot 4 / WebAssembly) - and every decision comes from a short readable rule file. Coaches call plays by down, distance, score and what has been working ('when \"Power\" averaging over 5 -> call \"Power\"'); plays set the formation and each assignment (routes, blocks, gaps, man and zone); a brain for each position - Gunslinger, Scrambler, Power Back, Ball Hawk, Center Fielder and more - decides how he plays it ten times a second. Edit any of them in the app with live lint, did-you-mean and a word list; Sim x10 gives the box score, yards a call and which rules did the work. Built on Rulebook, the rule language shared with Drillbook Bots.",
+    "url": "https://gridiron-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/gridiron-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "football",
+      "dsl"
     ],
     "new": true
   }
