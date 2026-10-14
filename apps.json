@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -416,6 +416,23 @@
       "godot",
       "football",
       "dsl"
+    ],
+    "new": true
+  },
+  {
+    "name": "Party Bots",
+    "slug": "party-bots",
+    "short": "Fantasy party sim: which classes, mixes and AI personalities actually win.",
+    "desc": "Level-5 adventurers on SRD 5.1 rules - all twelve classes, one subclass each - fight on a 5-ft grid with line of sight, cover, opportunity attacks, concentration, death saves and real spell areas. Every combatant runs a personality (Berserker, Tactician, Guardian, Coward, Assassin, Hoarder, Wildcard or your own) that steers targeting, positioning, healing and how fast it burns spell slots. Watch a single fight as an animated replay, run 200 for win rates, fill a 12x12 class-vs-class matrix on six battlefields, or run a party tournament to test whether mixed parties really beat single-class ones.",
+    "url": "https://party-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/party-bots",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "tabletop",
+      "monte-carlo",
+      "personalities"
     ],
     "new": true
   }
