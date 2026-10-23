@@ -45,7 +45,7 @@
     "name": "Battle Bots",
     "slug": "battle",
     "short": "AI personality dueling arena with batch simulation and per-matchup stats.",
-    "desc": "AI personality simulation arena \u2014 configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
+    "desc": "AI personality simulation arena — configurable agent flavors, equal-weighted matchups, batch simulation with stats.",
     "url": "https://battle.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/battle-bots",
     "status": "live",
@@ -352,6 +352,24 @@
     "new": true
   },
   {
+    "name": "Musterbook",
+    "slug": "musterbook",
+    "short": "Raise twenty 1640s companies on a budget, then win a ten-battle war one careful pick at a time.",
+    "desc": "The 1640s war of Drillbook Bots, simplified to four phone-first screens (Godot 4 / WebAssembly): muster an army of twenty companies - musketeers, pikes, pike-and-shot, harquebusiers, cuirassiers, winged hussars, dragoons, archers, clubmen and sakers - against a budget that pays for kit, wages and food; then before each of up to ten battles choose which companies (up to ten) go in and which drill each fights by. Companies are never replaced, so every one spent is one fewer for the end. A practice battle lets you try a matchup without the war.",
+    "url": "https://musterbook.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/musterbook",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle",
+      "strategy"
+    ],
+    "new": true
+  },
+  {
     "name": "Brawl Bots",
     "slug": "brawl-bots",
     "short": "Gunslingers vs ninja clans on four maps; supers vs minions; rewrite the AI as rules.",
@@ -440,7 +458,7 @@
     "name": "Pike & Shot Bots",
     "slug": "pike-shot-bots",
     "short": "1600s battle sim: buy pike, shot, horse and guns on a budget that has to feed them.",
-    "desc": "Raise two 17th-century armies on a budget: every company costs its kit up front (a matchlock 15s 6d, a trooper's horse \u00a36) and then wages and food for each day in the field, with horses eating far more than men. Eleven company types: musketeers, firelocks, pikemen, archers, trained bands, farmer conscripts, dragoons, harquebusiers, cuirassiers, winged hussars and sakers. They fight on a kilometre-wide field with hills, rivers, hedges, woods and villages, one company activation at a time: volleys with range falloff, rain misfires and limited ammunition, closing volleys, pikes braced against horse, flank charges, morale, rout, rally and hotheaded horse chasing the beaten off the map. Every company has a captain's personality (Steady, Hotheaded, Cautious, Skirmisher, Stalwart, Butcher, Raider, Coward, Wildcard or your own). Watch an animated battle, simulate 100, run historical orders of battle against each other, or find out what a pound is best spent on.",
+    "desc": "Raise two 17th-century armies on a budget: every company costs its kit up front (a matchlock 15s 6d, a trooper's horse £6) and then wages and food for each day in the field, with horses eating far more than men. Eleven company types: musketeers, firelocks, pikemen, archers, trained bands, farmer conscripts, dragoons, harquebusiers, cuirassiers, winged hussars and sakers. They fight on a kilometre-wide field with hills, rivers, hedges, woods and villages, one company activation at a time: volleys with range falloff, rain misfires and limited ammunition, closing volleys, pikes braced against horse, flank charges, morale, rout, rally and hotheaded horse chasing the beaten off the map. Every company has a captain's personality (Steady, Hotheaded, Cautious, Skirmisher, Stalwart, Butcher, Raider, Coward, Wildcard or your own). Watch an animated battle, simulate 100, run historical orders of battle against each other, or find out what a pound is best spent on.",
     "url": "https://pike-shot-bots.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/pike-shot-bots",
     "status": "live",
