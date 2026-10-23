@@ -438,6 +438,24 @@
     "new": true
   },
   {
+    "slug": "gridiron-career",
+    "name": "Gridiron Career",
+    "short": "Robot football with a career: rated robots, parts that break off, upgrades and a league.",
+    "desc": "Spun off Gridiron Bots to grow into a career game. Today it plays like Gridiron Bots: eleven robots a side, no kicking (every score is 7), you call plays from a hand of eight made-up plays with the coach's pick marked, and the robots tackle, dive, drop, fumble and talk trash. Next, built a step at a time: ratings (speed, strength, toughness, IQ, skills), a roster and details screen, arms, legs and heads that come off on big hits, upgrades bought with winnings, and a league of random rival teams.",
+    "url": "https://gridiron-career.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/gridiron-career",
+    "status": "live",
+    "new": true,
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "football",
+      "career"
+    ]
+  },
+  {
     "name": "Party Bots",
     "slug": "party-bots",
     "short": "Fantasy party sim: which classes, mixes and AI personalities actually win.",

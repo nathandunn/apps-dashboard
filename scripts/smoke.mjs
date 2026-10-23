@@ -29,7 +29,7 @@ const D = sandbox.Dashboard;
 ok(D, 'app.js defines window.Dashboard');
 
 /* --- data ---------------------------------------------------------------- */
-eq(apps.length, 30, 'all 30 entries preserved');
+eq(apps.length, 31, 'all 31 entries preserved');
 eq(new Set(apps.map(a => a.slug)).size, 30, 'slugs are unique');
 for (const a of apps) {
   ok(a.name && a.slug && a.status, `${a.slug}: name/slug/status present`);
@@ -42,8 +42,8 @@ for (const a of apps) {
 
 /* --- list markup --------------------------------------------------------- */
 const list = D.listHTML(apps);
-eq((list.match(/<article class="row"/g) || []).length, 30, 'one row per app');
-eq((list.match(/class="open"/g) || []).length, 30, 'one Open control per row');
+eq((list.match(/<article class="row"/g) || []).length, 31, 'one row per app');
+eq((list.match(/class="open"/g) || []).length, 31, 'one Open control per row');
 ok(!/class="card"/.test(list), 'no cards left in the rendered markup');
 const css = html.slice(html.indexOf('<style>'), html.indexOf('</style>'));
 ok(!/repeat\(auto-fill/.test(css), 'the auto-fill card grid rule is gone from the stylesheet');
