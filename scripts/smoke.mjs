@@ -30,7 +30,7 @@ ok(D, 'app.js defines window.Dashboard');
 
 /* --- data ---------------------------------------------------------------- */
 eq(apps.length, 31, 'all 31 entries preserved');
-eq(new Set(apps.map(a => a.slug)).size, 30, 'slugs are unique');
+eq(new Set(apps.map(a => a.slug)).size, 31, 'slugs are unique');
 for (const a of apps) {
   ok(a.name && a.slug && a.status, `${a.slug}: name/slug/status present`);
   ok(typeof a.short === 'string' && a.short.length > 0, `${a.slug}: has a one-line blurb`);
@@ -74,7 +74,7 @@ ok(!/<button[^>]*>(?:(?!<\/button>)[\s\S])*<a /.test(list), 'no anchor nested in
 const sorted = D.sortApps(apps);
 ok(sorted[0].new === true, 'an entry flagged new sorts first');
 eq(sorted[1].status, 'live', 'live entries sort next');
-eq(D.footText(apps, '2026-09-11'), '30 live · 0 building · 0 planned · updated 2026-09-11', 'footer counts');
+eq(D.footText(apps, '2026-09-11'), '31 live · 0 building · 0 planned · updated 2026-09-11', 'footer counts');
 
 /* --- click classification ------------------------------------------------ */
 const node = (tag, cls, parent) => ({
