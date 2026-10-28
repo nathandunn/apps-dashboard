@@ -72,8 +72,52 @@ ok(!/<button[^>]*>(?:(?!<\/button>)[\s\S])*<a /.test(list), 'no anchor nested in
 
 /* --- ordering and footer ------------------------------------------------- */
 const sorted = D.sortApps(apps);
-ok(sorted[0].new === true, 'an entry flagged new sorts first');
-eq(sorted[1].status, 'live', 'live entries sort next');
+for (let i = 1; i < sorted.length; i++)
+  ok(D.updatedOf(sorted[i - 1]) >= D.updatedOf(sorted[i]), `newest first: ${sorted[i - 1].slug} before ${sorted[i].slug}`);
+for (const a of apps) if (a.repo) ok(!isNaN(Date.parse(a.updated)), `${a.slug}: has an updated stamp`);
+eq(sorted[sorted.length - 1].slug, 'beach', 'an entry with no date sorts last');
+
+eq(apps.map(a => a.slug).join(), JSON.parse(readFileSync(join(ROOT, 'apps.json'), 'utf8')).map(a => a.slug).join(), 'sortApps leaves the input order alone');
+
+/* pins: pinned first, newest first among pins, then the rest newest first */
+const oldest = sorted[sorted.length - 2].slug, older = sorted[sorted.length - 3].slug;
+const pinnedSort = D.sortApps(apps, [oldest, older]);
+eq(pinnedSort[0].slug, older, 'pinned apps go on top, newest pin first');
+eq(pinnedSort[1].slug, oldest, 'second pin next');
+eq(pinnedSort[2].slug, sorted[0].slug, 'then the newest unpinned app');
+const pinnedList = D.listHTML(apps, [oldest], Date.parse('2026-10-29T00:00:00Z'));
+ok(pinnedList.indexOf(`data-slug="${oldest}"`) < pinnedList.indexOf(`data-slug="${sorted[0].slug}"`), 'pinned row renders first');
+ok(pinnedList.includes(`<article class="row pinned" data-slug="${oldest}"`), 'pinned row is marked');
+eq((pinnedList.match(/aria-pressed="true"/g) || []).length, 1, 'exactly one pin pressed');
+eq((pinnedList.match(/class="pin"/g) || []).length, 32, 'every row has a pin button');
+
+/* cookie */
+eq(D.readPins('a=1; pinned=rock-bots%2Cdino-duel; b=2').join(), 'rock-bots,dino-duel', 'pins read from the cookie');
+eq(D.readPins('').length, 0, 'no cookie, no pins');
+eq(D.readPins('pinned=ok%2C%3Cx%3E').join(), 'ok', 'junk slugs in the cookie are dropped');
+ok(/^pinned=rock-bots%2Cdino-duel; Path=\/; Max-Age=\d+; SameSite=Lax; Secure$/.test(D.pinCookie(['rock-bots', 'dino-duel'])), 'cookie string');
+eq(D.readPins(D.pinCookie(['a', 'b-c'])).join(), 'a,b-c', 'cookie round-trips');
+eq(D.togglePin(['a'], 'b').join(), 'a,b', 'pin adds');
+eq(D.togglePin(['a', 'b'], 'a').join(), 'b', 'pin again removes');
+
+/* live GitHub dates only move forward */
+const m = [{ slug: 'x', repo: 'https://github.com/o/x', updated: '2026-10-01T00:00:00Z' },
+           { slug: 'y', repo: 'https://github.com/o/y', updated: '2026-10-05T00:00:00Z' },
+           { slug: 'z', repo: null }];
+eq(D.mergeGitHub(m, [{ html_url: 'https://github.com/o/X', pushed_at: '2026-10-09T00:00:00Z' },
+                     { html_url: 'https://github.com/o/y', pushed_at: '2026-10-02T00:00:00Z' }]), true, 'merge reports a change');
+eq(m[0].updated, '2026-10-09T00:00:00Z', 'newer push wins');
+eq(m[1].updated, '2026-10-05T00:00:00Z', 'older push is ignored');
+eq(D.mergeGitHub(m, null), false, 'no repos, no change');
+eq(D.githubOwners(apps).join(), 'nathandunn', 'one GitHub owner to ask');
+
+/* relative times */
+const now = Date.parse('2026-10-28T23:00:00Z');
+eq(D.ago(now - 5 * 60e3, now), '5m ago', 'minutes');
+eq(D.ago(now - 3 * 3600e3, now), '3h ago', 'hours');
+eq(D.ago(now - 12 * 86400e3, now), '12d ago', 'days');
+eq(D.ago(Date.parse('2026-09-09T16:00:00Z'), now), 'Sep 9', 'older shows the date');
+eq(D.ago(0, now), '', 'no date, no label');
 eq(D.footText(apps, '2026-09-11'), '32 live · 0 building · 0 planned · updated 2026-09-11', 'footer counts');
 
 /* --- click classification ------------------------------------------------ */
@@ -86,7 +130,10 @@ const row = node('ARTICLE', ['row']);
 const head = node('DIV', ['head'], row);
 const btn = node('BUTTON', ['rowbtn'], head);
 const label = node('SPAN', ['name'], btn);
-const open = node('A', ['open'], head);
+const actions = node('DIV', ['actions'], head);
+const open = node('A', ['open'], actions);
+const pinBtn = node('BUTTON', ['pin'], actions);
+const pinIcon = node('svg', [], pinBtn);
 const metaLink = node('A', ['meta-link'], node('DD', [], node('DL', ['meta'], row)));
 const outside = node('FOOTER', ['foot']);
 
@@ -94,6 +141,8 @@ eq(D.classify(label), 'toggle', 'tapping the row text toggles detail');
 eq(D.classify(btn), 'toggle', 'tapping the button toggles detail');
 eq(D.classify(head), 'toggle', 'tapping row padding toggles detail');
 eq(D.classify(open), 'link', 'tapping Open does not toggle');
+eq(D.classify(pinBtn), 'pin', 'tapping the pin pins, not toggles');
+eq(D.classify(pinIcon), 'pin', 'tapping the pin icon pins');
 eq(D.classify(metaLink), 'link', 'tapping a detail link does not toggle');
 eq(D.classify(outside), null, 'clicks outside a row do nothing');
 eq(D.rowOf(label), row, 'rowOf walks up to the row');
