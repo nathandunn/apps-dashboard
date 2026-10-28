@@ -489,5 +489,22 @@
       "turn-based"
     ],
     "new": true
+  },
+  {
+    "name": "Cowboys vs Zombies",
+    "slug": "cowboys-vs-zombies",
+    "short": "A handful of cowboys hold the saloon against a 2:1 horde - only head shots count.",
+    "desc": "Spun off Brawl Bots. Godot 4 / WebAssembly: the dead come in through the swinging doors, two for every one of the living (ratio 1:1 to 3:1). Only a shot to the head puts a zombie down; body hits stagger it, knock it flat and wear it out, and a slug can take an arm or leg clean off - no legs, it crawls; no arms, nothing to grab with. Shamblers, Runners and Brutes come on as a Swarm, a Surround or a Wave; a zombie that gets a grip bites until the man is dead unless he kicks it loose, a friend shoots it off him, or he gets his Colt under its jaw. The cowboys keep every Brawl Bots temperament, plan, weapon and editable AI rule. If the dead win they eat; if the living win they burn every last one.",
+    "url": "https://cowboys-vs-zombies.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/cowboys-vs-zombies",
+    "status": "live",
+    "tags": [
+      "simulation",
+      "ai",
+      "3d",
+      "godot",
+      "battle"
+    ],
+    "new": true
   }
 ]
