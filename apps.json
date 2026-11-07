@@ -467,8 +467,8 @@
   {
     "slug": "gridiron-career",
     "name": "Gridiron Career",
-    "short": "Robot football with a career: rated robots, parts that break off, upgrades and a league.",
-    "desc": "Spun off Gridiron Bots to grow into a career game. Today it plays like Gridiron Bots: eleven robots a side, no kicking (every score is 7), you call plays from a hand of eight made-up plays with the coach's pick marked, and the robots tackle, dive, drop, fumble and talk trash. Next, built a step at a time: ratings (speed, strength, toughness, IQ, skills), a roster and details screen, arms, legs and heads that come off on big hits, upgrades bought with winnings, and a league of random rival teams.",
+    "short": "Robot football with a career: robots built from breakable parts, a league, cloud saves.",
+    "desc": "Eleven robots a side, built from their parts: heads, arms, legs, body and core that wear, break off and get repaired or upgraded with your winnings. Call plays from a hand of made-up plays (or let your coach), with audibles, field goals, extra points and two-point tries, punts and sudden-death overtime. Six-week seasons against three rival clubs that buy and repair just as you do; your robots and money carry from season to season, with players of the week and season awards. Saves go to the cloud under a save code, and it can be downloaded for Mac and Linux.",
     "url": "https://gridiron-career.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/gridiron-career",
     "status": "live",
@@ -480,7 +480,18 @@
       "3d",
       "godot",
       "football",
-      "career"
+      "career",
+      "download"
+    ],
+    "downloads": [
+      {
+        "label": "Mac",
+        "url": "https://gridiron-career.apps.precogsoftwareservices.com/downloads/gridiron-career-mac.zip"
+      },
+      {
+        "label": "Linux",
+        "url": "https://gridiron-career.apps.precogsoftwareservices.com/downloads/gridiron-career-linux.zip"
+      }
     ]
   },
   {

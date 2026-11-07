@@ -116,7 +116,8 @@
   }
 
   /* Detail carries only what apps.json already holds: the full blurb, tags,
-     status, the live URL and the source link. No invented fields. */
+     status, the live URL, the source link and - for an app that has them - its
+     desktop downloads (`downloads: [{label, url}]`). No invented fields. */
   function detailHTML(a) {
     var rows = [
       ['Status', '<span class="badge ' + esc(a.status) + '">' + esc(a.status) + '</span>'],
@@ -126,6 +127,11 @@
       ['Source', a.repo
         ? '<a class="meta-link" href="' + esc(a.repo) + '">' + esc(a.repo.replace(/^https?:\/\/(www\.)?github\.com\//, 'github.com/')) + '</a>'
         : '<span class="mute">private repo</span>'],
+      ['Download', a.downloads && a.downloads.length
+        ? a.downloads.map(function (d) {
+            return '<a class="meta-link" href="' + esc(d.url) + '" download>' + esc(d.label) + '</a>';
+          }).join(' · ')
+        : null],
       ['Updated', a.updated
         ? '<time datetime="' + esc(a.updated) + '">' + esc(String(a.updated).replace('T', ' ').replace(/:\d\dZ?$/, '').replace(/Z$/, '')) + ' UTC</time>'
         : '<span class="mute">unknown</span>']
@@ -133,7 +139,7 @@
     return '<div class="detail-inner">' +
       (a.desc ? '<p class="full">' + esc(a.desc) + '</p>' : '') +
       (a.tags && a.tags.length ? '<div class="tags">' + tagsHTML(a) + '</div>' : '') +
-      '<dl class="meta">' + rows.map(function (r) {
+      '<dl class="meta">' + rows.filter(function (r) { return r[1] !== null; }).map(function (r) {
         return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
       }).join('') + '</dl>' +
       '</div>';

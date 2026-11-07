@@ -186,6 +186,16 @@ ok(html.includes('id="list"'), 'index.html has the list mount point');
 ok(D.rowHTML({ name: '<img x>', slug: 's', short: '"q"', desc: '&', status: 'live', url: 'https://x/', repo: null })
   .includes('&lt;img x&gt;'), 'markup is escaped');
 
+// downloads: a Download row with one link per file, only for an app that lists them
+{
+  const withDl = D.detailHTML({ name: 'x', slug: 'x', status: 'live', downloads: [{ label: 'Mac', url: 'https://x/m.zip' }, { label: 'Linux', url: 'https://x/l.zip' }] });
+  ok(withDl.includes('<dt>Download</dt>') && withDl.includes('href="https://x/m.zip" download>Mac</a>') && withDl.includes('>Linux</a>'), 'downloads render as links');
+  ok(!D.detailHTML({ name: 'x', slug: 'x', status: 'live' }).includes('Download'), 'no Download row without downloads');
+  for (const a of apps) {
+    for (const d of a.downloads || []) ok(/^https:\/\//.test(d.url) && d.label, `${a.slug}: download ${d.label} has a label and an https url`);
+  }
+}
+
 console.log(`${pass} assertions passed${fails.length ? `, ${fails.length} FAILED` : ''}`);
 for (const f of fails) console.error('  FAIL ' + f);
 process.exit(fails.length ? 1 : 0);
