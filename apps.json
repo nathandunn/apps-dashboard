@@ -1,5 +1,23 @@
 [
   {
+    "slug": "society-sim",
+    "name": "Society Sim",
+    "short": "Two forager societies, one island, 500 years: which way of organising people survives, and why.",
+    "desc": "Every person is an agent with parents, skills and a cause of death. Each society carries a genome of social rules: marriage (monogamy to polygyny to open), descent, residence, who works and fights, how food is shared, trade, governance from anarchy to totalitarian, how free-riders and captives are treated, and when the band splits. Calibrated to forager life tables, with raids, slavery, trade, fifteen technologies including six medicines, and cultures that drift, imitate and conquer. Charts, a causal event log you can drill into year by year, and a sweep mode that ranks strategies over many seeds.",
+    "url": "https://society-sim.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/society-sim",
+    "status": "live",
+    "updated": "2026-11-07T23:09:11Z",
+    "new": true,
+    "tags": [
+      "simulation",
+      "ai",
+      "society",
+      "population",
+      "evolution"
+    ]
+  },
+  {
     "name": "Space Invaders",
     "slug": "space-invaders",
     "short": "Classic arcade shooter in TypeScript + Phaser.",
