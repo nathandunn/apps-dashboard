@@ -2,20 +2,22 @@
   {
     "slug": "society-sim",
     "name": "Society Sim",
-    "short": "Two forager societies, one island, 500 years: which way of organising people survives, and why.",
-    "desc": "Every person is an agent with parents, skills and a cause of death. Each society carries a genome of social rules: marriage (monogamy to polygyny to open), descent, residence, who works and fights, how food is shared, trade, governance from anarchy to totalitarian, how free-riders and captives are treated, and when the band splits. Calibrated to forager life tables, with raids, slavery, trade, fifteen technologies including six medicines, and cultures that drift, imitate and conquer. Charts, a causal event log you can drill into year by year, and a sweep mode that ranks strategies over many seeds.",
+    "short": "Two societies, 500 years, four worlds: which way of organising people survives in forest, farmland, desert or islands, and why.",
+    "desc": "Every person is an agent with parents, skills and a cause of death. Each society carries a genome of social rules: marriage, descent, residence, who works and fights, how food is shared, who owns fields and herds, trade, governance from anarchy to totalitarian, how free-riders and captives are treated. Pick a world: a forager forest island, a farmland river valley where villages boom and bust on tired soil, desert oases where herds are wealth and the prize of raids, or an archipelago where nobody meets until someone builds boats. Calibrated to forager life tables, with charts, a causal event log, and a sweep that ranks every society in every world.",
     "url": "https://society-sim.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/society-sim",
     "status": "live",
-    "updated": "2026-11-07T23:09:11Z",
+    "updated": "2026-11-08T02:32:14Z",
     "new": true,
     "tags": [
       "simulation",
       "ai",
       "society",
       "population",
-      "evolution"
-    ]
+      "evolution",
+      "farming"
+    ],
+    "version": "0.2.0"
   },
   {
     "name": "Space Invaders",
