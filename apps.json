@@ -2,12 +2,12 @@
   {
     "slug": "society-sim",
     "name": "Society Sim",
-    "short": "Two societies, 500 years, four worlds: which way of organising people survives in forest, farmland, desert or islands, and why.",
-    "desc": "Every person is an agent with parents, skills and a cause of death. Each society carries a genome of social rules: marriage, descent, residence, who works and fights, how food is shared, who owns fields and herds, trade, governance from anarchy to totalitarian, how free-riders and captives are treated. Pick a world: a forager forest island, a farmland river valley where villages boom and bust on tired soil, desert oases where herds are wealth and the prize of raids, or an archipelago where nobody meets until someone builds boats. Diseases spill over from animals and crowds, burn out, and return through trade, raids and captives. Calibrated to forager life tables; every baseline is tunable; sweeps run on the hub and rank which societies survive in which worlds.",
+    "short": "Fourteen ways of organising people, from Hadza-style foragers to Big Men, age-set warriors and clan mothers, pitted against each other for 500 years in forest, farmland, desert and islands.",
+    "desc": "Every person is an agent with parents, skills and a cause of death. Each society carries a genome of social rules: marriage, descent, residence, who works and fights, how food is shared, who owns fields and herds, trade, governance from anarchy, elders and clan mothers to Big Men and kings, marriage payments, feasting, feuds and blood money, age-set warriors, how free-riders and captives are treated. Pick a world: a forager forest island, a farmland river valley where villages boom and bust on tired soil, desert oases where herds are wealth and the prize of raids, or an archipelago where nobody meets until someone builds boats. Diseases spill over from animals and crowds, burn out, and return through trade, raids and captives. Calibrated to forager life tables; every baseline is tunable; sweeps run on the hub and rank which societies survive in which worlds.",
     "url": "https://society-sim.apps.precogsoftwareservices.com",
     "repo": "https://github.com/nathandunn/society-sim",
     "status": "live",
-    "updated": "2026-11-08T18:38:27Z",
+    "updated": "2026-11-09T15:26:35Z",
     "new": true,
     "tags": [
       "simulation",
@@ -17,7 +17,7 @@
       "evolution",
       "farming"
     ],
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   {
     "name": "Space Invaders",
