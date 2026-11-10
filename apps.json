@@ -1,5 +1,25 @@
 [
   {
+    "slug": "broadside-bots",
+    "name": "Broadside Bots",
+    "short": "Pirates! meets the Mayflower meets the Oregon Trail: one captain, eastern Caribbean, 1675. Trade or turn pirate, keep your crew fed and paid, retire alive.",
+    "desc": "Oregon Trail-style voyages between nine ports (pace, rations, rum, scurvy after six weeks, hurricane season, becalmings, mutiny), markets that recover day by day, and sails on the horizon captained by AI personalities (aggression, caution, greed, honour). Set standing orders for range, shot (round, chain, grape), boarding and ramming, then see how the fight goes. Traders pay wages and bank profits; pirates cruise from St Thomas, fence their prizes and share out by the articles. Fire on a ship of a nation at peace and you're a pirate. v0: Trader and Pirate; 3D sea battles, Navy and Privateer careers, colonists and your own island to come.",
+    "url": "https://broadside-bots.apps.precogsoftwareservices.com",
+    "repo": "https://github.com/nathandunn/broadside-bots",
+    "status": "live",
+    "updated": "2026-11-10T04:56:01Z",
+    "new": true,
+    "tags": [
+      "game",
+      "simulation",
+      "ai",
+      "pirates",
+      "trading",
+      "godot"
+    ],
+    "version": "0.1.0"
+  },
+  {
     "slug": "society-sim",
     "name": "Society Sim",
     "short": "Fourteen ways of organising people, from Hadza-style foragers to Big Men, age-set warriors and clan mothers, pitted against each other for 500 years in forest, farmland, desert and islands.",
